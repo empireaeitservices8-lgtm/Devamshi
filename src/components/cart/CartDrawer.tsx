@@ -4,13 +4,12 @@ import { useCartStore } from "@/store/useCartStore";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Minus, Plus, ShoppingBag, Trash2 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export default function CartDrawer() {
   const router = useRouter();
-  const { items, isOpen, toggleCart, removeItem, updateQuantity, clearCart, cartTotal, cartCount } = useCartStore();
+  const { items, isOpen, toggleCart, removeItem, updateQuantity, cartTotal, cartCount } = useCartStore();
   const [isClient, setIsClient] = useState(false);
 
   const handleCheckout = () => {
