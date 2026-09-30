@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Trash2, Smartphone, Banknote, CreditCard, CheckCircle2, ShieldCheck, ArrowRight } from "lucide-react";
+import { Trash2, Smartphone, Banknote, CreditCard, CheckCircle2, ShieldCheck, ArrowRight, PackageCheck } from "lucide-react";
 
 export default function CheckoutPage() {
   const { items, cartTotal, removeItem, clearCart } = useCartStore();
